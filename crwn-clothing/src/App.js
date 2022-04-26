@@ -1,14 +1,18 @@
-// import CatagoryItem from "./components/catagory-item/catagory-item.component";
-// import Catagories from "./components/catagories/catagories.component"
-import Directory from "./components/directory/directory.component"
+import {Routes,Route} from 'react-router-dom'
+import Home from "./components/routes/home/home.component"
+import Navigation from "./components/routes/navigation/navigation.component"
 
 const App = () => {
-  // <Catagories /> 
 
 
   return (
+    <Routes>
+      <Route path='/' element={<Navigation/>}>
+      <Route index element={< Home />}>
 
-        < Directory />
+      </Route>
+      </Route>
+    </Routes>
    
    
   );
